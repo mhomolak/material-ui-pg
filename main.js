@@ -2,9 +2,14 @@ import './main.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 import MaterialComponent from './src/js/component-owner';
 
+// provides onTouchTap() to all React components
+injectTapEventPlugin();
+
 export default class MyComponent {
+
 
   constructor(config) {
 

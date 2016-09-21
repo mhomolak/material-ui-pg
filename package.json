@@ -24,7 +24,9 @@
     "url": "https://github.com/Pearson-Higher-Ed/"
   },
   "dependencies": {
-    "react-intl": "~2.0.1"
+    "material-ui": "^0.15.4",
+    "react-intl": "~2.0.1",
+    "react-tap-event-plugin": "^1.0.0"
   },
   "devDependencies": {
     "@pearson-components/npm-scripts": "^0.2.0",

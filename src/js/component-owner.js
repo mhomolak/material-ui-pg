@@ -14,9 +14,9 @@ const muiTheme = getMuiTheme({
 
 class MaterialComponent extends React.Component {
 
-  constructor(props) {
+  constructor() {
 
-    super(props);
+    super();
 
     this.state = { open: false };
   }
@@ -33,8 +33,8 @@ class MaterialComponent extends React.Component {
             onTouchTap={this.handleToggle}
           />
           <Drawer open={this.state.open}>
-            <MenuItem>Alright</MenuItem>
-            <MenuItem>Cool</MenuItem>
+            <MenuItem onTouchTap={this.handleToggle}>Alright</MenuItem>
+            <MenuItem onTouchTap={this.handleToggle}>Cool</MenuItem>
           </Drawer>
         </div>
       </MuiThemeProvider>

@@ -2,13 +2,13 @@ import React from 'react';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
-import { deepOrange500 } from 'material-ui/styles/colors';
+import { redA700 } from 'material-ui/styles/colors';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const muiTheme = getMuiTheme({
   palette: {
-    accent1Color: deepOrange500
+    accent1Color: redA700
   }
 });
 
@@ -33,8 +33,10 @@ class MaterialComponent extends React.Component {
             onTouchTap={this.handleToggle}
           />
           <Drawer open={this.state.open}>
-            <MenuItem onTouchTap={this.handleToggle}>Alright</MenuItem>
-            <MenuItem onTouchTap={this.handleToggle}>Cool</MenuItem>
+            <MenuItem>Alright</MenuItem>
+            <MenuItem>Cool</MenuItem>
+            <MenuItem>Many</MenuItem>
+            <MenuItem>Options</MenuItem>
           </Drawer>
         </div>
       </MuiThemeProvider>

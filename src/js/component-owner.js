@@ -2,15 +2,14 @@ import React from 'react';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
-import { redA700 } from 'material-ui/styles/colors';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-const muiTheme = getMuiTheme({
-  palette: {
-    accent1Color: redA700
+const styles = {
+  container: {
+    textAlign: 'center',
+    paddingTop: 30
   }
-});
+};
 
 class MaterialComponent extends React.Component {
 
@@ -26,17 +25,17 @@ class MaterialComponent extends React.Component {
   render() {
 
     return (
-      <MuiThemeProvider muiTheme={muiTheme}>
-        <div>
+      <MuiThemeProvider>
+        <div style={styles.container}>
           <RaisedButton
-            label="oh hey"
-            onTouchTap={this.handleToggle}
+          label="I'm a drawer"
+          onTouchTap={this.handleToggle}
           />
           <Drawer open={this.state.open}>
-            <MenuItem>Alright</MenuItem>
-            <MenuItem>Cool</MenuItem>
-            <MenuItem>Many</MenuItem>
-            <MenuItem>Options</MenuItem>
+          <MenuItem>Alright</MenuItem>
+          <MenuItem>Cool</MenuItem>
+          <MenuItem>Many</MenuItem>
+          <MenuItem>Buttons</MenuItem>
           </Drawer>
         </div>
       </MuiThemeProvider>

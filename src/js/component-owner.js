@@ -32,7 +32,7 @@ class MaterialComponent extends React.Component {
           style={{
             backgroundColor: blue600
           }}
-          label="I'm a drawer"
+          label="Drawer trigger "
           labelColor={tealA400}
           onTouchTap={this.handleToggle}
           />

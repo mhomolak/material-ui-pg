@@ -12,8 +12,8 @@ const styles = {
 const DatePickerExample = () => (
   <MuiThemeProvider>
     <div style={styles.container}>
-      <DatePicker hintText="Portrait" container="inline"/>
-      <DatePicker hintText="Landscape" container="inline" mode="landscape"/>
+      <DatePicker hintText="Portrait DatePicker" container="inline"/>
+      <DatePicker hintText="Landscape DatePicker" container="inline" mode="landscape"/>
     </div>
   </MuiThemeProvider>
 )

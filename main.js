@@ -7,6 +7,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import MaterialComponent from './src/js/component-owner';
 import AppBarExample from './src/js/app-bar';
 import DatePickerExample from './src/js/date-picker';
+import DialogExample from './src/js/dialog';
 
 // provides onTouchTap() to all React components
 injectTapEventPlugin();
@@ -31,6 +32,9 @@ export default class MyComponent {
         </div>
         <div>
           <DatePickerExample />
+        </div>
+        <div>
+          <DialogExample />
         </div>
       </div>,
       document.getElementById(config.elementId)

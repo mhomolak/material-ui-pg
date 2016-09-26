@@ -36,6 +36,9 @@ export default class MyComponent {
         <div>
           <DialogExample />
         </div>
+        <div>
+          <p>Placeholder for Chip</p>
+        </div>
       </div>,
       document.getElementById(config.elementId)
     );

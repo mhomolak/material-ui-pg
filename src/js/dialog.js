@@ -1,7 +1,5 @@
 import React from 'react';
-import Dialog from 'material-ui/Dialog';
-import FlatButton from 'material-ui/FlatButton';
-import RaisedButton from 'material-ui/RaisedButton';
+import { Dialog, FlatButton, RaisedButton } from 'material-ui/';
 import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
@@ -62,7 +60,7 @@ export default class DialogExample extends React.Component {
             titleClassName="dialog-title"
             title="Scrolling Dialog"
             actions={actionButtons}
-            modal={false}
+            modal={true}
             open={this.state.open}
             onRequestClose={this.handleClose}
             autoScrollBodyContent={true}

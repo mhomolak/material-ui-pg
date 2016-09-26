@@ -10,7 +10,7 @@ const styles = {
   }
 };
 
-class MaterialComponent extends React.Component {
+class DrawerComponent extends React.Component {
 
   constructor() {
 
@@ -50,4 +50,4 @@ class MaterialComponent extends React.Component {
 
 }
 
-export default MaterialComponent;
+export default DrawerComponent;

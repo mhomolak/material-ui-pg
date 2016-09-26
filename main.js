@@ -4,7 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
-import MaterialComponent from './src/js/component-owner';
+import DrawerComponent from './src/js/drawer';
 import AppBarExample from './src/js/app-bar';
 import DatePickerExample from './src/js/date-picker';
 import DialogExample from './src/js/dialog';
@@ -14,7 +14,6 @@ import ChipExample from './src/js/chip';
 injectTapEventPlugin();
 
 export default class MyComponent {
-
 
   constructor(config) {
 
@@ -29,7 +28,7 @@ export default class MyComponent {
           <AppBarExample />
         </div>
         <div>
-          <MaterialComponent />
+          <DrawerComponent />
         </div>
         <div>
           <DatePickerExample />

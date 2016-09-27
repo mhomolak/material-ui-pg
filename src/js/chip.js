@@ -1,5 +1,6 @@
 import React from 'react';
-import { Avatar, Chip } from 'material-ui/';
+import Avatar from 'material-ui/Avatar';
+import Chip from 'material-ui/Chip';
 import SvgIconFace from 'material-ui/svg-icons/action/face';
 import { blue100, blue900 } from 'material-ui/styles/colors';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -71,7 +72,7 @@ export default class ChipExample extends React.Component {
           </Chip>
 
           <Chip onTouchTap={handleTouchTap} style={styles.chip}>
-            <Avatar size={32}>MH</Avatar>
+            <Avatar>MH</Avatar>
             Text Avatar Chip
           </Chip>
 
@@ -81,7 +82,7 @@ export default class ChipExample extends React.Component {
             onTouchTap={handleTouchTap}
             style={styles.chip}
           >
-            <Avatar size={32} color={blue100} backgroundColor={blue900}>
+            <Avatar color={blue100} backgroundColor={blue900}>
               MH
             </Avatar>
             Colored Chip

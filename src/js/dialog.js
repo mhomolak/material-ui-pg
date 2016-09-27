@@ -1,5 +1,7 @@
 import React from 'react';
-import { Dialog, FlatButton, RaisedButton } from 'material-ui/';
+import Dialog from 'material-ui/Dialog';
+import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
 import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 

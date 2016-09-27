@@ -4,8 +4,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
-import DrawerComponent from './src/js/drawer';
 import AppBarExample from './src/js/app-bar';
+import DrawerExample from './src/js/drawer';
 import DatePickerExample from './src/js/date-picker';
 import DialogExample from './src/js/dialog';
 import ChipExample from './src/js/chip';
@@ -24,21 +24,11 @@ export default class MyComponent {
 
     ReactDOM.render(
       <div>
-        <div>
-          <AppBarExample />
-        </div>
-        <div>
-          <DrawerComponent />
-        </div>
-        <div>
-          <DatePickerExample />
-        </div>
-        <div>
-          <DialogExample />
-        </div>
-        <div>
-          <ChipExample />
-        </div>
+        <AppBarExample />
+        <DrawerExample />
+        <DialogExample />
+        <DatePickerExample />
+        <ChipExample />
       </div>,
       document.getElementById(config.elementId)
     );

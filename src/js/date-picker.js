@@ -9,18 +9,11 @@ const styles = {
   }
 }
 
-function test1() {
-  alert('Portrait date picker is focused!');
-}
-
-function test2() {
-  alert('Landscape date picker is focused!')
-}
 const DatePickerExample = () => (
   <MuiThemeProvider>
     <div style={styles.container}>
-      <DatePicker onFocus={test1} hintText="Portrait DatePicker" container="inline"/>
-      <DatePicker onFocus={test2} hintText="Landscape DatePicker" container="inline" mode="landscape"/>
+      <DatePicker hintText="Portrait DatePicker" container="inline"/>
+      <DatePicker hintText="Landscape DatePicker" container="inline" mode="landscape"/>
     </div>
   </MuiThemeProvider>
 )

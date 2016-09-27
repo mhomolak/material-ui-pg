@@ -32,9 +32,10 @@ export default class ChipExample extends React.Component {
         <div style={styles.wrapper}>
 
           <Chip
-            style={styles.chip}
+          className="first-chip"
+          style={styles.chip}
           >
-            Text Chip
+            Text Chip /w !CSS
           </Chip>
 
           <Chip
@@ -85,7 +86,7 @@ export default class ChipExample extends React.Component {
             <Avatar color={blue100} backgroundColor={blue900}>
               MH
             </Avatar>
-            Colored Chip
+            Colored Chip /w inline JS
           </Chip>
         </div>
       </MuiThemeProvider>

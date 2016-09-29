@@ -33,12 +33,12 @@ export default class DialogExample extends React.Component {
     const actionButtons = [
       <FlatButton
         label="Cancel"
-        primary={true}
+        className="fb-test"
         onTouchTap={this.handleClose}
       />,
       <FlatButton
         label="Submit"
-        primary={true}
+        className="fb-test"
         onTouchTap={this.handleClose}
       />
     ];
@@ -60,6 +60,8 @@ export default class DialogExample extends React.Component {
           <RaisedButton label="Scrolling Dialog" onTouchTap={this.handleOpen} />
           <Dialog
             titleClassName="dialog-title"
+            actionsContainerClassName="dialog-container"
+            bodyClassName="dialog-body"
             title="Scrolling Dialog"
             actions={actionButtons}
             modal={true}

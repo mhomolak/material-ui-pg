@@ -5,16 +5,15 @@ import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
-import { grey300 } from 'material-ui/styles/colors';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const AppBarExample = () => (
   <MuiThemeProvider>
     <AppBar
       titleStyle={{
-        backgroundColor: grey300,
-        paddingLeft: 10
+        paddingLeft: 15
       }}
+      className="app-bar-test"
       title="This is an app-bar"
       iconElementLeft={<IconButton><NavigationClose /></IconButton>}
       iconElementRight={

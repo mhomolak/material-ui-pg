@@ -2,7 +2,6 @@ import React from 'react';
 import Avatar from 'material-ui/Avatar';
 import Chip from 'material-ui/Chip';
 import SvgIconFace from 'material-ui/svg-icons/action/face';
-import { blue100, blue900 } from 'material-ui/styles/colors';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const styles = {
@@ -32,10 +31,9 @@ export default class ChipExample extends React.Component {
         <div style={styles.wrapper}>
 
           <Chip
-          className="first-chip"
           style={styles.chip}
           >
-            Text Chip /w !CSS
+            Text Chip
           </Chip>
 
           <Chip
@@ -78,15 +76,15 @@ export default class ChipExample extends React.Component {
           </Chip>
 
           <Chip
-            backgroundColor={blue100}
+            className="last-chip"
             onRequestDelete={handleDelete}
             onTouchTap={handleTouchTap}
             style={styles.chip}
           >
-            <Avatar color={blue100} backgroundColor={blue900}>
+            <Avatar className="avatar-test">
               MH
             </Avatar>
-            Colored Chip /w inline JS
+            Colored Chip
           </Chip>
         </div>
       </MuiThemeProvider>

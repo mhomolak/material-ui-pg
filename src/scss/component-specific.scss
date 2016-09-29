@@ -1,9 +1,39 @@
 body {
   padding: 30px;
 }
-.dialog-title {
-  background-color: red;
+.app-bar-test {
+  background-color: pe-color(sky-blue) !important;
 }
-.first-chip {
-  background-color: red !important;
+.drawer-test {
+  background-color: pe-color(highlighter) !important;
+}
+.button-test {
+  background-color: pe-color(firetruck) !important;
+  button > div > div > span {
+    color: pe-color(basic-blue) !important;
+  }
+}
+.fb-test {
+  color: pe-color(royal-navy) !important;
+}
+.dialog-title {
+  background-color: pe-color(firetruck);
+}
+.dialog-container {
+  background-color: pe-color(sandy-gray);
+}
+.dialog-body {
+  background-color: pe-color(brightly-lit);
+}
+.date-test {
+  div > div {
+    color: pe-color(firetruck) !important;
+  }
+}
+.last-chip {
+  background-color: pe-color(sky-blue) !important;
+}
+.avatar-test {
+  background-color: pe-color(royal-navy) !important;
+  color: pe-color(sky-blue) !important;
 }
